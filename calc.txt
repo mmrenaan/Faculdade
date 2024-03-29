@@ -1,0 +1,93 @@
+#include<stdio.h> 
+
+  
+
+int main() 
+
+{ 
+
+    char operacao; 
+
+    double num1, num2, resultado; 
+
+     
+
+    printf("Olá, eu sou Calc, sua calculadora pessoal!\n"); 
+
+    printf("Digite a operação desejada (-, +, *, /):"); 
+
+    scanf("%c", &operacao); 
+
+     
+
+    //numero 1 
+
+    printf("Digite o primeiro número:"); 
+
+    scanf("%lf", &num1); 
+
+     
+
+    //numero 2 
+
+    printf("Digite o segundo número:"); 
+
+    scanf("%lf", &num2); 
+
+     
+
+    //estrutura condicional 
+
+    switch(operacao)  
+
+    { 
+
+        case '+': 
+
+            resultado = num1 + num2; 
+
+            break; 
+
+        case '-': 
+
+            resultado = num1 - num2; 
+
+            break; 
+
+        case '/': 
+
+            if ((num1 == 0)||(num2 == 0)) { 
+
+                printf("Não é possível dividir por 0!"); 
+
+                return 1; 
+
+            } else { 
+
+                resultado = num1 / num2; 
+
+            } 
+
+            break; 
+
+        case '*': 
+
+            resultado = num1 * num2; 
+
+            default: 
+
+            printf("Operação inválida, tente novamente!"); 
+
+            return 1; 
+
+    } 
+
+    //resultado 
+
+    printf("%.2lf %c %.2lf = %.2lf", num1, operacao, num2, resultado); 
+
+     
+
+    return 0; 
+
+} 
