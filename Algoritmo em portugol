@@ -1,0 +1,19 @@
+ALGORITMO “SEQUÊNCIA DE FIBONACCI”
+
+VAR:
+INTEIRO X, Y, Z, F;
+X <- 34
+Y <- 55
+F <- 0
+
+INÍCIO
+
+PARA F <- até == 1000 FAÇA
+X + Y = Z
+ESCREVA Z
+Y <- Z
+X <- Y
+
+FIMPARA
+
+FIMALGORITMO
