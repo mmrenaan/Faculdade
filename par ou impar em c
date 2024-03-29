@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+ 
+int main()
+{
+    
+int num1, x, cont;
+for(cont=1; cont<=2; cont++) {
+    x=num1;
+    printf("Digite um número:");
+    scanf("%d", &num1);
+    if(num1%2==0) {
+        printf("O número %d é par!\n", num1);
+    } else {
+        printf("O número %d é ímpar!\n", num1);
+    }
+}
+if((num1%2==0)&&(x%2==0)) {
+    printf("Há dois números pares!");
+} else if((num1%2!=0)&&(x%2!=0)) {
+    printf("Não há número par!");
+} else {
+    printf("Há um número par!");
+}
+ 
+ 
+return 0;
+}
